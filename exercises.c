@@ -31,7 +31,7 @@ int cmp(const void *ptrpivote, const void *ptritem){
   int 
 }
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-  qsort()
+  //qsort()
     
 }
 
