@@ -22,3 +22,42 @@ Fri 10 Mar 2023 12:10:57 PM UTC:
  tests:  1|6
 total_score: 10/70
 c01c724
+Fri 10 Mar 2023 09:16:13 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘cmp’:
+exercises.c:32:1: error: expected identifier or ‘(’ before ‘}’ token
+   32 | }
+      | ^
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:34:3: error: too few arguments to function ‘qsort’
+   34 |   qsort()
+      |   ^~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:838:13: note: declared here
+  838 | extern void qsort (void *__base, size_t __nmemb, size_t __size,
+      |             ^~~~~
+In file included from test.c:5:
+exercises.c:34:10: error: expected ‘;’ before ‘}’ token
+   34 |   qsort()
+      |          ^
+      |          ;
+   35 | 
+   36 | }
+      | ~         
+test.c: In function ‘cmp’:
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+test.c:272: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dec78da
