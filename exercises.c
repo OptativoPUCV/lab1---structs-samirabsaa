@@ -27,12 +27,18 @@ la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
 
-/*int cmp(const void *ptrpivote, const void *ptritem){
-  
-}*/
+int cmp(const void *ptrpivote, const void *ptritem){
+  int *ptrpivote = (int *)pivote; 
+  int *ptritem = (int *)item;
+
+  if(*ptrpivote>*ptritem)return 1; 
+  else return 0; 
+}
 void arrayMaxMin(int *a, int n, int *max, int *min) {
-  //qsort()
-    
+  qsort(a, n, sizeof(int),cmp);
+  *min =a[0];
+  *max =a[n - 1]
+,    
 }
 
 

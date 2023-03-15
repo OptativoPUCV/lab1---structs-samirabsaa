@@ -100,3 +100,34 @@ Fri 10 Mar 2023 09:17:05 PM UTC:
  tests:  1|6
 total_score: 10/70
 5516136
+Wed 15 Mar 2023 03:23:44 PM UTC: 
+ exercises.c | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘cmp’:
+exercises.c:31:8: error: ‘ptrpivote’ redeclared as different kind of symbol
+   31 |   int *ptrpivote = (int *)pivote;
+      |        ^~~~~~~~~
+exercises.c:30:21: note: previous definition of ‘ptrpivote’ with type ‘const void *’
+   30 | int cmp(const void *ptrpivote, const void *ptritem){
+      |         ~~~~~~~~~~~~^~~~~~~~~
+exercises.c:31:27: error: ‘pivote’ undeclared (first use in this function); did you mean ‘ptrpivote’?
+   31 |   int *ptrpivote = (int *)pivote;
+      |                           ^~~~~~
+      |                           ptrpivote
+exercises.c:31:27: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:32:8: error: ‘ptritem’ redeclared as different kind of symbol
+   32 |   int *ptritem = (int *)item;
+      |        ^~~~~~~
+exercises.c:30:44: note: previous definition of ‘ptritem’ with type ‘const void *’
+   30 | int cmp(const void *ptrpivote, const void *ptritem){
+      |                                ~~~~~~~~~~~~^~~~~~~
+exercises.c:32:25: error: ‘item’ undeclared (first use in this function)
+   32 |   int *ptritem = (int *)item;
+      |                         ^~~~
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:42:1: error: expected expression before ‘}’ token
+   42 | }
+      | ^
+Compilation failed
+604e844
