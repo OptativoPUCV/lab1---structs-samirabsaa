@@ -104,12 +104,10 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-for(int i=0; i<3; i++){
-  int suma=0; 
-  suma = a[i]; 
-  suma = suma + b[i]; 
-  suma = c[i];
-}
+
+  a[0] + b[0]= c[0]; 
+  a[1] + b[1] = c[1];
+  a[2] + b[2] = c[2];
 }
 
 /*

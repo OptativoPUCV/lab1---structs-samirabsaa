@@ -230,3 +230,25 @@ exercises.c:111:10: error: incompatible types when assigning to type ‘int’ f
       |          ^
 Compilation failed
 c4288b9
+Thu 16 Mar 2023 02:43:40 PM UTC: 
+ exercises.c | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:108:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  108 |   a[0] + b[0]= c[0];
+      |   ~~~~ ^ ~~~~
+      |    |      |
+      |    Vector Vector
+exercises.c:109:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  109 |   a[1] + b[1] = c[1];
+      |   ~~~~ ^ ~~~~
+      |    |      |
+      |    Vector Vector
+exercises.c:110:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  110 |   a[2] + b[2] = c[2];
+      |   ~~~~ ^ ~~~~
+      |    |      |
+      |    Vector Vector
+Compilation failed
+24a13fc
