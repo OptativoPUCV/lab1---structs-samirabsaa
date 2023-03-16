@@ -252,3 +252,37 @@ exercises.c:110:8: error: invalid operands to binary + (have ‘Vector’ and �
       |    Vector Vector
 Compilation failed
 24a13fc
+Thu 16 Mar 2023 02:47:08 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:108:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  108 |   *a[0] + *b[0]= *c[0];
+      |   ^~~~~
+exercises.c:108:11: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  108 |   *a[0] + *b[0]= *c[0];
+      |           ^~~~~
+exercises.c:108:18: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  108 |   *a[0] + *b[0]= *c[0];
+      |                  ^~~~~
+exercises.c:109:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  109 |   *a[1] + *b[1] = *c[1];
+      |   ^~~~~
+exercises.c:109:11: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  109 |   *a[1] + *b[1] = *c[1];
+      |           ^~~~~
+exercises.c:109:19: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  109 |   *a[1] + *b[1] = *c[1];
+      |                   ^~~~~
+exercises.c:110:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  110 |   *a[2] + *b[2] = *c[2];
+      |   ^~~~~
+exercises.c:110:11: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  110 |   *a[2] + *b[2] = *c[2];
+      |           ^~~~~
+exercises.c:110:19: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  110 |   *a[2] + *b[2] = *c[2];
+      |                   ^~~~~
+Compilation failed
+93a461e
