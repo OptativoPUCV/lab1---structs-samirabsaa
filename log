@@ -212,3 +212,21 @@ exercises.c:108:7: error: invalid operands to binary + (have ‘Vector’ and �
       |    Vector
 Compilation failed
 d6ea29b
+Thu 16 Mar 2023 02:42:03 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:109:10: error: incompatible types when assigning to type ‘int’ from type ‘Vector’
+  109 |   suma = a[i];
+      |          ^
+exercises.c:110:15: error: invalid operands to binary + (have ‘int’ and ‘Vector’)
+  110 |   suma = suma + b[i];
+      |               ^ ~~~~
+      |                  |
+      |                  Vector
+exercises.c:111:10: error: incompatible types when assigning to type ‘int’ from type ‘Vector’
+  111 |   suma = c[i];
+      |          ^
+Compilation failed
+c4288b9
