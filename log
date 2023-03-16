@@ -160,3 +160,15 @@ Wed 15 Mar 2023 03:24:38 PM UTC:
  tests:  2|5
 total_score: 20/70
 b9b932b
+Thu 16 Mar 2023 02:32:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:89:7: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   89 |   i = vector[0];
+      |       ^~~~~~
+      |       Vector
+exercises.c:89:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+691c951
