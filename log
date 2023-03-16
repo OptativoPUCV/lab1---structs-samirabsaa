@@ -172,3 +172,13 @@ exercises.c:89:7: error: ‘vector’ undeclared (first use in this function); d
 exercises.c:89:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 691c951
+Thu 16 Mar 2023 02:32:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:89:7: error: incompatible types when assigning to type ‘int’ from type ‘Vector’
+   89 |   i = v[0];
+      |       ^
+Compilation failed
+13eedba
