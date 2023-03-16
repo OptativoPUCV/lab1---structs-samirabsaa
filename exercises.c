@@ -82,7 +82,7 @@ void reservaMemoria(int *n){
 
 Vector * crearVector(int n) {
 
-  vector[] = reservaMemoria(n);
+  //vector[] = reservaMemoria(n);
    return NULL;
 }
 
