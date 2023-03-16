@@ -286,3 +286,19 @@ exercises.c:110:19: error: invalid type argument of unary ‘*’ (have ‘Vecto
       |                   ^~~~~
 Compilation failed
 93a461e
+Thu 16 Mar 2023 02:48:01 PM UTC: 
+ exercises.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:110:10: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  110 |   suma = *a[i];
+      |          ^~~~~
+exercises.c:111:17: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  111 |   suma = suma + *b[i];
+      |                 ^~~~~
+exercises.c:112:10: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  112 |   suma = *c[i];
+      |          ^~~~~
+Compilation failed
+4c69849
