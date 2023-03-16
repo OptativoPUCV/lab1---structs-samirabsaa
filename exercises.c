@@ -109,7 +109,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   int suma=0; 
   suma = *a[i]; 
   suma = suma + *b[i]; 
-  suma = *c[i];
+  *c[i] = suma ;
 }
 }
 
