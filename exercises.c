@@ -76,7 +76,13 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
+void reservaMemoria(int *n){
+  
+}
+
 Vector * crearVector(int n) {
+
+  vector[] = reservaMemoria(n);
    return NULL;
 }
 
@@ -96,6 +102,12 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
    return 0;
+
+  /*for(int j=0; j<5; j++){
+    if(j=i){
+      v
+    }
+  }*/
 }
 
 /*
@@ -105,12 +117,12 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
 
-  for(int i=0; i<3; i++){
+  /*for(int i=0; i<3; i++){
   int suma=0; 
   suma = *a[i]; 
   suma = suma + *b[i]; 
   *c[i] = suma ;
-}
+}*/
 }
 
 /*

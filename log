@@ -318,3 +318,27 @@ exercises.c:112:3: error: invalid type argument of unary ‘*’ (have ‘Vector
       |   ^~~~~
 Compilation failed
 43b8f59
+Thu 16 Mar 2023 03:30:57 PM UTC: 
+ exercises.c | 16 ++++++++++++++--
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:3: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   85 |   vector[] = reservaMemoria(n);
+      |   ^~~~~~
+      |   Vector
+exercises.c:85:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:85:10: error: expected expression before ‘]’ token
+   85 |   vector[] = reservaMemoria(n);
+      |          ^
+exercises.c:85:29: error: passing argument 1 of ‘reservaMemoria’ makes pointer from integer without a cast [-Werror=int-conversion]
+   85 |   vector[] = reservaMemoria(n);
+      |                             ^
+      |                             |
+      |                             int
+exercises.c:79:26: note: expected ‘int *’ but argument is of type ‘int’
+   79 | void reservaMemoria(int *n){
+      |                     ~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+c2deb6f
