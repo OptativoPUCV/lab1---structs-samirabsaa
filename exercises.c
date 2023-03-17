@@ -82,9 +82,16 @@ typedef struct {
 
 Vector * crearVector(int n) {
 
-  //Vector * vector = (vector *) malloc(sizeof(vector));
-  //if(vector==NULL) return (EXIT_FAILURE);
-   return NULL;
+  Vector * vector = (Vector *) malloc(sizeof(Vector));
+  if(vector==NULL) return NULL;
+  vector->datos=calloc(n,sizeof(int));
+  vector->capacidad =n; 
+
+  if(vector->datos == NULL){
+    return NULL;
+  }
+  
+   return vector;
 }
 
 /*
@@ -93,11 +100,11 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-   for(int j=0; j<5; j++){
-     if(j==i){
-       v[j] = valor;
-     }
-   }
+   //for(int j=0; j<5; j++){
+     //if(j==i){
+       //v[j] = valor;
+     //}
+   //}
 }
 
 /*
@@ -106,13 +113,15 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 0;
-
+  
   /*for(int j=0; j<5; j++){
     if(j=i){
       v
     }
-  }*/
+  }*/ 
+  return 0;
+
+  
 }
 
 /*
