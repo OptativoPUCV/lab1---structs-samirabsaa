@@ -434,3 +434,17 @@ Fri 17 Mar 2023 12:19:14 PM UTC:
  tests:  7|1
 total_score: 60/70
 58f5c73
+Fri 17 Mar 2023 12:25:56 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:136:19: error: variable ‘vauxb’ set but not used [-Werror=unused-but-set-variable]
+  136 |   Vector *vauxa, *vauxb;
+      |                   ^~~~~
+exercises.c:136:11: error: variable ‘vauxa’ set but not used [-Werror=unused-but-set-variable]
+  136 |   Vector *vauxa, *vauxb;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+64dd501
