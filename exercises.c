@@ -80,13 +80,10 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-void reservaMemoria(int *n){
-  
-}
-
 Vector * crearVector(int n) {
 
-  //vector[] = reservaMemoria(n);
+  //Vector * vector = (vector *) malloc(sizeof(vector));
+  //if(vector==NULL) return (EXIT_FAILURE);
    return NULL;
 }
 
