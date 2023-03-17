@@ -448,3 +448,9 @@ exercises.c:136:11: error: variable ‘vauxa’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 64dd501
+Fri 17 Mar 2023 01:56:15 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ tests:  8|0
+total_score: 70/70
+86399eb
