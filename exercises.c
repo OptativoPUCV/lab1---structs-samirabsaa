@@ -90,7 +90,6 @@ Vector * crearVector(int n) {
   if(vector->datos == NULL){
     return NULL;
   }
-  
    return vector;
 }
 
@@ -109,13 +108,10 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-  
-  /*for(int j=0; j<5; j++){
-    if(j=i){
-      v
-    }
-  }*/ 
-  return 0;
+
+  //i = v->datos; 
+   
+  return v->datos[i];
 
   
 }
